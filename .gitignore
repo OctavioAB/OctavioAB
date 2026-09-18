@@ -1,3 +1,7 @@
 **/test
 **/.venv/**
 **/.env
+**/.vscode
+
+alg_Design/.algDe
+alg_Design/alg_design.egg-info
