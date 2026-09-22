@@ -2,6 +2,7 @@
 **/.venv/**
 **/.env
 **/.vscode
+**/__pycache__/**
 
 alg_Design/.algDe
 alg_Design/alg_design.egg-info

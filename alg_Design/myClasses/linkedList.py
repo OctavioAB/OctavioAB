@@ -52,3 +52,13 @@ class LinkedList:
                 to_return = to_return + ", "
         return to_return + " ]"
     
+    def __len__(self) -> int:
+        if self.head == Node:
+            return 0
+        len = 0
+        current: Node = self.head
+        while current:
+            current = current.next
+            len+=1
+        return len
+    
