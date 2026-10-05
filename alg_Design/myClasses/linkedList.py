@@ -31,12 +31,16 @@ class LinkedList:
             Returns: 
             bool: True if data is in this list, False otherwise'''
         if self.head == None:
+            # print("Linked list is empty")
             return False
         current: ListNode = self.head
-        while current and current.data is not data:
+        while current and (current.data != data):
+            # print(f"current.data is not data: {current.data is not data}")
+            # print(f"current is: {current.data} of type {type(current.data)}\n and data is {data} of type {type(data)}")
             current = current.next
         if current and current.data == data:
             return True
+        # print(f"data {data} type {type(data)} was not found in linked list")
         return False
     
     def __str__(self) -> str:
